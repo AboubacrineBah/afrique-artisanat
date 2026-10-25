@@ -1,0 +1,255 @@
+// ==========================================================================
+// Thème Afrique Artisanat : palette et typographies du cahier des charges (section 7)
+// ==========================================================================
+$ocre: #B8651B;
+$ocre-fonce: #A35813; // ocre légèrement assombri : texte blanc lisible sur les boutons
+$brun: #5A3825;
+$indigo: #1F3A5F;
+$creme: #FAF3E8;
+$sauge: #3E6B48;
+
+// Variables Bootstrap
+$primary: $ocre-fonce;
+$secondary: $brun;
+$success: $sauge;
+$info: $indigo;
+$danger: #8A2D1F;
+$body-bg: $creme;
+$body-color: $brun;
+$link-color: $indigo;
+$link-hover-color: $ocre-fonce;
+$headings-color: $indigo;
+$headings-font-family: 'Playfair Display', Georgia, serif;
+$font-family-sans-serif: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+$border-color: #E5D6C2;
+$input-border-color: #B9A58C;
+$border-radius: .5rem;
+$btn-font-weight: 600;
+$navbar-light-color: $brun;
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+// --------------------------------------------------------------------------
+// Composants du site
+// --------------------------------------------------------------------------
+.demo-bar {
+    background: $indigo;
+    color: $creme;
+    font-size: .8125rem;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+.brand {
+    font-family: $headings-font-family;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $brun;
+}
+
+.eyebrow {
+    color: $sauge;
+    font-weight: 600;
+}
+
+.price {
+    font-weight: 700;
+    color: $indigo;
+}
+
+.product-name {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $brun;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 4.2vw, 2.75rem);
+    line-height: 1.15;
+}
+
+.hero-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: #EAD3B8;
+}
+
+.gallery-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: #EAD3B8;
+}
+
+.card-product {
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: .625rem;
+    transition: box-shadow .15s;
+
+    &:hover {
+        box-shadow: 0 4px 14px rgba($brun, .14);
+    }
+
+    .card-img-top {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        background: #EAD3B8;
+        border-radius: .5rem;
+    }
+}
+
+.cat-tile {
+    display: block;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: .625rem;
+    padding: 1.25rem .75rem;
+    text-align: center;
+    font-weight: 600;
+    color: $brun;
+    text-decoration: none;
+
+    small {
+        display: block;
+        font-weight: 400;
+        color: lighten($brun, 25%);
+    }
+
+    &:hover {
+        border-color: $ocre-fonce;
+        color: $ocre-fonce;
+    }
+}
+
+.value-tile {
+    background: $indigo;
+    color: $creme;
+    border-radius: .625rem;
+    padding: 1.25rem;
+    height: 100%;
+
+    strong {
+        display: block;
+        font-family: $headings-font-family;
+        font-size: 1.125rem;
+    }
+}
+
+.panel {
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: .625rem;
+    padding: 1.25rem;
+}
+
+.panel>h2,
+.panel>.h5 {
+    font-size: 1.25rem;
+}
+
+.site-footer {
+    background: $brun;
+    color: $creme;
+    font-size: .875rem;
+
+    a {
+        color: $creme;
+        text-decoration: underline;
+    }
+}
+
+.order-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .625rem;
+    padding: 0;
+    list-style: none;
+
+    li {
+        flex: 1 1 7.5rem;
+        text-align: center;
+        padding: .625rem;
+        border-radius: .5rem;
+        background: #fff;
+        border: 1px solid $border-color;
+        font-size: .875rem;
+    }
+
+    li.done {
+        background: #D5E8D4;
+        color: #1E4A2A;
+    }
+
+    li.current {
+        background: $indigo;
+        color: #fff;
+        border-color: $indigo;
+        font-weight: 600;
+    }
+}
+
+// Back-office
+.admin-sidebar {
+    background: $indigo;
+    color: $creme;
+    width: 14.5rem;
+
+    .nav-link {
+        color: $creme;
+        border-radius: .375rem;
+        margin-bottom: .25rem;
+    }
+
+    .nav-link:hover {
+        background: rgba(#fff, .12);
+    }
+
+    .nav-link.active {
+        background: $creme;
+        color: $indigo;
+        font-weight: 600;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .admin-sidebar {
+        width: 100%;
+    }
+}
+
+.stat-card {
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: .625rem;
+    padding: 1rem;
+
+    .value {
+        font-family: $headings-font-family;
+        font-weight: 700;
+        font-size: 1.875rem;
+        color: $indigo;
+    }
+}
+
+.table-admin {
+    --bs-table-bg: transparent;
+    font-size: .875rem;
+}
+
+.thumb-sm {
+    width: 2.75rem;
+    height: 2.75rem;
+    object-fit: cover;
+    border-radius: .375rem;
+    background: #EAD3B8;
+}
+
+.thumb-md {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: .5rem;
+    background: #EAD3B8;
+}

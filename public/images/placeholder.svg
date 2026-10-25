@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Image de substitution">
+  <rect width="800" height="800" fill="#FAF3E8"/>
+  <g fill="none" stroke="#B8651B" stroke-width="6" stroke-linecap="round" opacity="0.85">
+    <path d="M80 160h640M80 240h640M80 560h640M80 640h640"/>
+    <path d="M120 200l40 40-40 40 40 40M240 200l40 40-40 40 40 40M360 200l40 40-40 40 40 40M480 200l40 40-40 40 40 40M600 200l40 40-40 40 40 40" transform="translate(0 -40)" opacity="0.5"/>
+  </g>
+  <g fill="#1F3A5F">
+    <circle cx="400" cy="400" r="86"/>
+    <circle cx="400" cy="400" r="48" fill="#FAF3E8"/>
+    <circle cx="400" cy="400" r="22"/>
+  </g>
+  <g fill="#B8651B">
+    <circle cx="240" cy="400" r="12"/><circle cx="560" cy="400" r="12"/>
+    <circle cx="320" cy="400" r="8"/><circle cx="480" cy="400" r="8"/>
+  </g>
+</svg>
